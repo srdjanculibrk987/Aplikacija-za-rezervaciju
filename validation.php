@@ -15,6 +15,8 @@ function emailValidation($user) {
 
     if (empty($user)) {
         return "Polje ne sme biti prazno";
+    } elseif (strlen($user) < 7) {
+        return "Email adresa mora biti validna";
     } elseif (!filter_var($user, FILTER_VALIDATE_EMAIL)) {
         return "Email adresa mora biti validna";
     } else {

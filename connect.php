@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $username = "culi87";
-$password = "Maestro87";
+$password = "maestro87";
 $database = "reservationapp";
 
 
