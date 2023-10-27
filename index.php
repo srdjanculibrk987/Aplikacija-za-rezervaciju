@@ -12,4 +12,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $vreme = $_POST["vreme"];
 }
 
-require "index.view.php";
+require "views/index.view.php";
