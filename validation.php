@@ -1,5 +1,6 @@
 <?php
 
+/* Validacije za formu */
 
 function nameValidation($user) {
     if (empty($user)) {
@@ -51,4 +52,10 @@ function timeValidation($time, $date) {
     } else {
         return "";
     }
+}
+
+
+
+function urlIS($value) {
+    return $_SERVER['REQUEST_URI'] === $value;
 }

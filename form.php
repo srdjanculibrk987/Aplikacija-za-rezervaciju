@@ -2,7 +2,7 @@
 session_start();
 
 require_once "connect.php";
-require_once "validation.php";
+
 
 $imeError = "";
 $emailError = "";
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         VALUE('$ime','$email','$mobile','$datum','$vreme','$odrasli','$deca')";
 
         if ($conn->query($q)) {
-            header("Location:index.php");
+            header("Location:success.php");
         } else {
             header("Location:error.php");
         }
