@@ -1,7 +1,3 @@
-<?php
-require 'validation.php';
-?>
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid bg-info text-white">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -14,10 +10,10 @@ require 'validation.php';
                     <a href="/" class="nav-link <?= urlIS('/') ? 'bg-primary text-dark' : 'bg-info text-white' ?>" aria-current="page">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/form.php" class="nav-link <?= urlIS('/form.php') ? 'bg-primary text-dark' : 'bg-info text-white' ?>" aria-current="page">Rezervacija</a>
+                    <a href="/form" class="nav-link <?= urlIS('/form') ? 'bg-primary text-dark' : 'bg-info text-white' ?>" aria-current="page">Rezervacija</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/features.php" class="nav-link <?= urlIS('/features.php') ? 'bg-primary text-dark' : 'bg-info text-white' ?>">Features</a>
+                    <a href="/features" class="nav-link <?= urlIS('/features') ? 'bg-primary text-dark' : 'bg-info text-white' ?>">Features</a>
                 </li>
 
                 <li class="nav-item dropdown">

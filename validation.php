@@ -53,9 +53,3 @@ function timeValidation($time, $date) {
         return "";
     }
 }
-
-
-
-function urlIS($value) {
-    return $_SERVER['REQUEST_URI'] === $value;
-}
