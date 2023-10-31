@@ -3,7 +3,7 @@ require 'validation.php';
 ?>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid navigColor">
+    <div class="container-fluid bg-info text-white">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -11,13 +11,13 @@ require 'validation.php';
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/" class="nav-link active class=" <?= urlIS('/') ? 'aktiniLink' : 'neaktiniLink' ?>" aria-current="page">Homepage</a>
+                    <a href="/" class="nav-link <?= urlIS('/') ? 'bg-primary text-dark' : 'bg-info text-white' ?>" aria-current="page">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a href="form.php" class="nav-link active class=" <?= urlIS('form.php') ? 'aktiniLink' : 'neaktiniLink' ?>" aria-current="page">Rezervacija</a>
+                    <a href="/form.php" class="nav-link <?= urlIS('/form.php') ? 'bg-primary text-dark' : 'bg-info text-white' ?>" aria-current="page">Rezervacija</a>
                 </li>
                 <li class="nav-item">
-                    <a href="features.php" class="nav-link" class="<?= urlIS('features.php') ? 'aktiniLink' : 'neaktiniLink'; ?>">Features</a>
+                    <a href="/features.php" class="nav-link <?= urlIS('/features.php') ? 'bg-primary text-dark' : 'bg-info text-white' ?>">Features</a>
                 </li>
 
                 <li class="nav-item dropdown">
